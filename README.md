@@ -29,6 +29,17 @@
     - [2.2.1. Block Elements:](#221-block-elements)
     - [2.2.2. Inline Elements:](#222-inline-elements)
     - [2.2.3. Block and Inline example:](#223-block-and-inline-example)
+- [3. Chapter 3:](#3-chapter-3)
+  - [3.1. CSS Selectors (Element, Class, and ID):](#31-css-selectors-element-class-and-id)
+    - [3.1.1. Element Selector:](#311-element-selector)
+    - [3.1.2. Class Selector:](#312-class-selector)
+    - [3.1.3. ID Selector:](#313-id-selector)
+  - [3.2. CSS Display Property:](#32-css-display-property)
+    - [3.2.1. display: block:](#321-display-block)
+    - [3.2.2. display: inline:](#322-display-inline)
+    - [3.2.3. display: inline-block:](#323-display-inline-block)
+    - [3.2.4. display: none:](#324-display-none)
+    - [3.2.5. Summary:](#325-summary)
 
 
 # 1. chapter 1:
@@ -348,3 +359,191 @@ Examples:
 ```
 
 ![alt text](./assets/images/chapter-2/block-vs-inline.png)
+
+# 3. Chapter 3:
+## 3.1. CSS Selectors (Element, Class, and ID):
+A CSS selector is used to select HTML elements so that CSS styles can be applied to them.
+
+The three most common selectors are:
+- Element Selector
+- Class Selector
+- ID Selector
+
+### 3.1.1. Element Selector:
+An element selector selects all HTML elements of the same type.
+
+- html
+```html
+<p>First paragraph</p> 
+<p>Second paragraph</p>
+```
+- css
+```css
+p {
+  color: red;
+}
+```
+
+### 3.1.2. Class Selector:
+A class selector selects one or more elements that have the same class name. It starts with a dot (.).
+
+- html
+```html
+<p class="paragraph">First paragraph</p> 
+<p class="paragraph">Second paragraph</p>
+```
+- css
+```css
+.paragraph {
+  color: blue;
+}
+```
+
+### 3.1.3. ID Selector:
+An ID selector selects one unique element with a specific ID. It starts with a hash (#).
+
+Note: An ID should be unique and used only once on a page.
+
+- html
+
+```html
+<p id="paragraph">First paragraph</p>
+```
+
+- css
+
+```css
+#paragraph {
+  color: green;
+}
+```
+
+## 3.2. CSS Display Property:
+The display property controls how an HTML element is displayed on a web page. It determines whether an element appears as a block, inline, inline-block, or none (hidden).
+
+Common Values:
+- block
+- inline
+- inline-block
+- none
+
+### 3.2.1. display: block:
+Behaves like a block element. 
+
+- html
+
+```html
+<span>This is an inline element.</span>
+<span>This is an inline element.</span>
+<span>This is an inline element.</span>
+```
+
+![alt text](./assets/images/chapter-3/display-block-1.png)
+
+- css
+
+```css
+span {
+  display: block;
+}
+```
+
+![alt text](./assets/images/chapter-3/display-block-2.png)
+
+### 3.2.2. display: inline:
+Behaves like an inline element.
+
+- html
+
+```html
+<p>This is an block element.</p>
+<p>This is an block element.</p>
+<p>This is an block element.</p>
+```
+![alt text](./assets/images/chapter-3/display-inline-1.png)
+
+- css
+
+```css
+p {
+  display: inline;
+}
+```
+![alt text](./assets/images/chapter-3/display-inline-2.png)   
+
+### 3.2.3. display: inline-block:
+An inline-block element:
+  - Stays on the same line like an inline element.
+  - Allows you to set width and height like a block element.
+
+**Before Applying:**
+
+- html
+
+```html
+<span>This is an inline element.</span>
+<span>This is an inline element.</span>
+<span>This is an inline element.</span>
+```
+![alt text](image.png)
+![alt text](./assets/images/chapter-3/display-inline-block-1.png)
+
+- css
+
+```css
+span {
+  display: inline; /*Default for span element*/
+  width: 150px;
+  height: 50px;
+}
+```
+
+**After Applying:**
+
+- html
+
+```html
+<span>This is an inline element.</span>
+<span>This is an inline element.</span>
+<span>This is an inline element.</span>
+```
+![alt text](./assets/images/chapter-3/display-inline-block-1.png)
+
+- css
+
+```css
+span {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+}
+```
+
+![alt text](./assets/images/chapter-3/display-inline-block-2.png)
+
+
+### 3.2.4. display: none: 
+used to hide an element from the web page.
+
+- html
+  
+```html
+<p>This element will be hidden</p>
+```  
+
+- css
+
+```css
+p {
+  display: none;
+}
+```
+
+### 3.2.5. Summary: 
+
+| Display Value | New Line? | Takes Full Width? | Width & Height Work? |
+| ------------- | --------- | ----------------- | -------------------- |
+| block         | ✅ Yes     | ✅ Yes             | ✅ Yes                |
+| inline        | ❌ No      | ❌ No              | ❌ Usually No         |
+| inline-block  | ❌ No      | ❌ No              | ✅ Yes                |
+| none          | ❌ Hidden  | ❌ No              | ❌ Not displayed      |
