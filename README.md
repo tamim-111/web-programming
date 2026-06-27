@@ -18,6 +18,13 @@
     - [1.4.1. What is a Web Client:](#141-what-is-a-web-client)
     - [1.4.2. What is a Web Server:](#142-what-is-a-web-server)
     - [1.4.3. How They Work Together:](#143-how-they-work-together)
+- [2. Chapter 2:](#2-chapter-2)
+  - [2.1. Table, Form, Hyperlink, Images, Lists (How Those Tags Work):](#21-table-form-hyperlink-images-lists-how-those-tags-work)
+    - [2.1.1. Table:](#211-table)
+    - [2.1.2. Form:](#212-form)
+    - [2.1.3. Hyperlink:](#213-hyperlink)
+    - [2.1.4. Images:](#214-images)
+    - [2.1.5. Lists:](#215-lists)
 
 
 # 1. chapter 1:
@@ -148,3 +155,134 @@ Returns HTML, CSS, JavaScript, Images, etc.
     ▼ 
 Browser Displays the Website
 ```
+
+# 2. Chapter 2: 
+
+## 2.1. Table, Form, Hyperlink, Images, Lists (How Those Tags Work):
+
+### 2.1.1. Table: 
+A table is used to organize and display data in rows and columns.
+
+Common Tags that are used to create a tables:
+- `<table>` → Creates the table.
+- `<tr>` → Table row.
+- `<th>` → Table heading.
+- `<td>` → Table data (cell).
+
+```html
+<table border="1">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+</table>
+```
+
+![alt text](./assets/images/chapter-2/table.png)
+
+### 2.1.2. Form:
+A form is used to collect user input, such as login information, registration details, or feedback.
+
+Common Tags that are used to create a form:
+- `<form>` → Creates the form.
+- `<input>` → Input field.
+- `<input type="radio">` → Radio button field.
+- `<label>` → Label for the input field.
+- `<textarea>` → Textarea field.
+- `<select>` → Dropdown field.
+- `<button>` → Button field.
+
+```html
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+        <br><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+```
+
+![alt text](./assets/images/chapter-2/form.png)
+
+### 2.1.3. Hyperlink:
+A hyperlink connects one web page or resource to another. It is created using the <a> (anchor) tag.
+
+Common Attributes that are used to create a hyperlink:
+- `href` → Specifies the URL of the page the link goes to.
+- `target` → Specifies where to open the linked document (e.g., `_blank` for a new tab, `_self(default)` for the same tab).
+
+```html
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+```
+![alt text](./assets/images/chapter-2/hyperlink.png)
+
+### 2.1.4. Images:
+An image is a visual representation that can be displayed on a web page. It is added using the <img> tag.
+
+Common Attributes that are used to create an image:
+- `src` → Specifies the path to the image file.
+- `alt` → Specifies an alternative text for the image if the image cannot be displayed.
+
+```html
+<img src="./imageName.jpg" alt="Description of the image">
+```
+
+Note: If we have nested folder then follow the folder order: 
+```html
+<img src="./assets/images/chapter-2/table.png" alt="Description of the image">
+```
+
+### 2.1.5. Lists:
+A list is a collection of items that can be displayed in an ordered or unordered manner.    
+
+Common Tags that are used to create a list:
+- `<ul>` → Unordered list.
+- `<ol>` → Ordered list.
+- `<li>` → List item.
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+![alt text](./assets/images/chapter-2/lists.png)
+
