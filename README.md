@@ -7,6 +7,9 @@
       - [1.1.2.1. TCP (Transmission Control Protocol):](#1121-tcp-transmission-control-protocol)
       - [1.1.2.2. IP (Internet Protocol):](#1122-ip-internet-protocol)
     - [1.1.3. How TCP and IP Work Together:](#113-how-tcp-and-ip-work-together)
+  - [1.2. DNS Process:](#12-dns-process)
+    - [1.2.1. What is DNS:](#121-what-is-dns)
+    - [1.2.2. How DNS Works:](#122-how-dns-works)
 
 
 # 1. chapter 1:
@@ -64,3 +67,30 @@ TCP → Reassembles packets
    |
 Web page is displayed      
 ```
+
+## 1.2. DNS Process:
+### 1.2.1. What is DNS:
+DNS (Domain Name System) is the phonebook of the Internet. It translates a domain name (such as www.google.com) into an IP address that computers use to communicate. Without DNS, you would have to remember IP addresses instead of website names.
+
+### 1.2.2. How DNS Works: 
+Suppose you type `www.google.com` in your browser: 
+
+```
+User types: www.google.com 
+    │ 
+    ▼ 
+Browser sends DNS request 
+    │ 
+    ▼ 
+DNS Server (Finds the IP address) 
+    │ 
+    ▼ 
+Returns IP Address 
+    │ 
+    ▼ 
+Browser connects to Google's Server 
+    │ 
+    ▼ 
+Web page is displayeds
+```
+
