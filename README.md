@@ -10,6 +10,10 @@
   - [1.2. DNS Process:](#12-dns-process)
     - [1.2.1. What is DNS:](#121-what-is-dns)
     - [1.2.2. How DNS Works:](#122-how-dns-works)
+  - [1.3. Web Accessibility:](#13-web-accessibility)
+    - [1.3.1. What is Web Accessibility:](#131-what-is-web-accessibility)
+    - [1.3.2. Why is Web Accessibility Important:](#132-why-is-web-accessibility-important)
+    - [1.3.3. Common Accessibility Features:](#133-common-accessibility-features)
 
 
 # 1. chapter 1:
@@ -93,4 +97,26 @@ Browser connects to Google's Server
     ▼ 
 Web page is displayeds
 ```
+
+## 1.3. Web Accessibility: 
+### 1.3.1. What is Web Accessibility:
+Web Accessibility means designing and developing websites so that everyone, including people with disabilities, can access and use them easily.
+
+### 1.3.2. Why is Web Accessibility Important: 
+- Makes websites usable for everyone.
+- Helps people with visual, hearing, physical, or cognitive disabilities.
+- Improves the overall user experience.
+- In many countries, accessibility is required by law.
+
+### 1.3.3. Common Accessibility Features: 
+- Alternative text (alt text) for images.
+  - `<img src="image.jpg" alt="Description of the image">`
+- Screen reader support for visually impaired users.
+  - `<a href="page.html" aria-label="Go to the next page">Next</a>`
+- Good color contrast between text and background.
+  - `<body style="background-color: gray; color: black;">`
+- Use of clear headings and proper HTML structure.
+  - `<h1>Main Heading</h1>, <h2>Subheading</h2>`
+- Descriptive link text (e.g., "Download PDF" instead of "Click here").
+  - `<a href="file.pdf">Download PDF</a>`
 
