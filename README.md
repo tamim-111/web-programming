@@ -25,6 +25,10 @@
     - [2.1.3. Hyperlink:](#213-hyperlink)
     - [2.1.4. Images:](#214-images)
     - [2.1.5. Lists:](#215-lists)
+  - [2.2. Difference Between Block and Inline Elements:](#22-difference-between-block-and-inline-elements)
+    - [2.2.1. Block Elements:](#221-block-elements)
+    - [2.2.2. Inline Elements:](#222-inline-elements)
+    - [2.2.3. Block and Inline example:](#223-block-and-inline-example)
 
 
 # 1. chapter 1:
@@ -286,3 +290,61 @@ Common Tags that are used to create a list:
 
 ![alt text](./assets/images/chapter-2/lists.png)
 
+
+## 2.2. Difference Between Block and Inline Elements:
+HTML elements are mainly divided into Block and Inline elements based on how they are displayed on a web page.
+
+| Block Elements                             | Inline Elements                        |
+| ------------------------------------------ | -------------------------------------- |
+| Starts on a new line                       | Does not start on a new line           |
+| Takes the full available width             | Does not take the full available width |
+| Can contain both block and inline elements | Can only contain inline elements       |
+
+### 2.2.1. Block Elements: 
+A block element starts on a new line and takes up the full width available by default.
+
+Characteristics:
+- Starts on a new line.
+- Takes the full available width.
+- Can contain both block and inline elements.
+
+Examples: 
+```html
+<div>
+<p>
+<h1> to <h6>
+<section>
+<article>
+<ul>
+<ol>
+<table>
+<form>
+```
+
+### 2.2.2. Inline Elements: 
+An inline element does not start on a new line and takes up only the width necessary for its content.
+
+Characteristics:
+- Does not start on a new line.
+- Does not take the full available width.
+- Can only contain inline elements.
+
+Examples: 
+```html
+<span>
+<a>
+<img>
+<strong>
+```
+
+### 2.2.3. Block and Inline example: 
+
+```html
+<div>
+  <p>This is a <strong>block</strong> element.</p>
+  <span>This is an inline element.</span>
+  <a href="#">This is another inline element.</a>
+</div>
+```
+
+![alt text](./assets/images/chapter-2/block-vs-inline.png)
