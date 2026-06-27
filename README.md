@@ -14,6 +14,10 @@
     - [1.3.1. What is Web Accessibility:](#131-what-is-web-accessibility)
     - [1.3.2. Why is Web Accessibility Important:](#132-why-is-web-accessibility-important)
     - [1.3.3. Common Accessibility Features:](#133-common-accessibility-features)
+  - [1.4. Web Clients and Web Servers:](#14-web-clients-and-web-servers)
+    - [1.4.1. What is a Web Client:](#141-what-is-a-web-client)
+    - [1.4.2. What is a Web Server:](#142-what-is-a-web-server)
+    - [1.4.3. How They Work Together:](#143-how-they-work-together)
 
 
 # 1. chapter 1:
@@ -120,3 +124,27 @@ Web Accessibility means designing and developing websites so that everyone, incl
 - Descriptive link text (e.g., "Download PDF" instead of "Click here").
   - `<a href="file.pdf">Download PDF</a>`
 
+## 1.4. Web Clients and Web Servers:
+### 1.4.1. What is a Web Client:
+A Web Client is a program or device that requests information from a web server. The most common web client is a web browser like Google Chrome, Mozilla Firefox, or Microsoft Edge.
+
+### 1.4.2. What is a Web Server:
+A Web Server is a computer or software that stores websites and responds to requests from web clients. The most common web server software includes Apache, Nginx, and Microsoft IIS.
+
+### 1.4.3. How They Work Together:
+
+```
+User 
+    │ 
+    ▼ 
+Web Client (Browser) 
+    │ 
+    ▼
+Web Server 
+    │ 
+    ▼ 
+Returns HTML, CSS, JavaScript, Images, etc. 
+    │ 
+    ▼ 
+Browser Displays the Website
+```
