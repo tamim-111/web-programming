@@ -1,20 +1,12 @@
 <h1 align="center">Web Programming</h1>
 
-- [1. Introduction to the Internet and World Wide Web](#1-introduction-to-the-internet-and-world-wide-web)
-  - [1.1. The Internet:](#11-the-internet)
-  - [1.2. From fARPANET to Today:](#12-from-farpanet-to-today)
-  - [1.3. Birth of The Web:](#13-birth-of-the-web)
-  - [1.4. Who Runs The Internet:](#14-who-runs-the-internet)
-  - [1.5. Intranets and Extranets:](#15-intranets-and-extranets)
-  - [1.6. What is a Network:](#16-what-is-a-network)
-  - [1.7. Components of a Network:](#17-components-of-a-network)
-  - [1.8. Types of Networks:](#18-types-of-networks)
-  - [1.9. TCP/IP (Transmission Control Protocol / Internet Protocol):](#19-tcpip-transmission-control-protocol--internet-protocol)
-    - [1.9.1. TCP (Transmission Control Protocol):](#191-tcp-transmission-control-protocol)
-    - [1.9.2. IP (Internet Protocol):](#192-ip-internet-protocol)
-  - [URIs and URLs](#uris-and-urls)
-    - [URI (Uniform Resource Identifier)](#uri-uniform-resource-identifier)
-    - [URL (Uniform Resource Locator):](#url-uniform-resource-locator)
+- [chapter 1:](#chapter-1)
+  - [TCP, IP, Protocols (How it works):](#tcp-ip-protocols-how-it-works)
+    - [What is a Protocol:](#what-is-a-protocol)
+    - [TCP/IP (Transmission Control Protocol / Internet Protocol):](#tcpip-transmission-control-protocol--internet-protocol)
+      - [TCP (Transmission Control Protocol):](#tcp-transmission-control-protocol)
+      - [IP (Internet Protocol):](#ip-internet-protocol)
+    - [How TCP and IP Work Together:](#how-tcp-and-ip-work-together)
 
 
 # chapter 1:
