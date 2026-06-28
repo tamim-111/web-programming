@@ -29,6 +29,7 @@
     - [2.2.1. Block Elements:](#221-block-elements)
     - [2.2.2. Inline Elements:](#222-inline-elements)
     - [2.2.3. Block and Inline example:](#223-block-and-inline-example)
+  - [2.3. HTML Semantic Elements:](#23-html-semantic-elements)
 - [3. Chapter 3:](#3-chapter-3)
   - [3.1. CSS Selectors (Element, Class, and ID):](#31-css-selectors-element-class-and-id)
     - [3.1.1. Element Selector:](#311-element-selector)
@@ -371,6 +372,9 @@ Examples:
 ```
 
 ![alt text](./assets/images/chapter-2/block-vs-inline.png)
+
+## 2.3. HTML Semantic Elements:  
+https://github.com/muhammad-tamim/html-notes#html-semantic-elements
 
 # 3. Chapter 3:
 ## 3.1. CSS Selectors (Element, Class, and ID):
