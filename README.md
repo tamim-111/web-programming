@@ -49,6 +49,9 @@
     - [3.3.6. CSS Grid:](#336-css-grid)
       - [3.3.6.1. Simple Example:](#3361-simple-example)
     - [3.3.7. CSS Media Queries:](#337-css-media-queries)
+  - [3.4. CSS Viewport:](#34-css-viewport)
+    - [3.4.1. Viewport Units:](#341-viewport-units)
+    - [3.4.2. Examples:](#342-examples)
 
 
 # 1. chapter 1:
@@ -621,3 +624,41 @@ common properties of CSS Grid:
 
 ### 3.3.7. CSS Media Queries:
 https://github.com/muhammad-tamim/css-notes#19-media-queries
+
+## 3.4. CSS Viewport:  
+The viewport is the visible area of a web page in the browser. The viewport size changes depending on the device: 
+- Desktop → Large viewport
+- Tablet → Medium viewport
+- Mobile → Small viewport
+
+Note: Responsive websites use the viewport to adjust their layout for different screen sizes.
+
+### 3.4.1. Viewport Units: 
+
+| Unit | Meaning                              |
+| ---- | ------------------------------------ |
+| vw   | 1% of the viewport width             |
+| vh   | 1% of the viewport height            |
+| vmin | 1% of the smaller viewport dimension |
+| vmax | 1% of the larger viewport dimension  |
+
+### 3.4.2. Examples:
+
+1. Full Screen Height:
+
+here, the The element takes 100% of the viewport height
+```css
+.hero { 
+  height: 100vh; 
+}
+```
+
+2. Half Screen Width: 
+
+here, the The element takes 50% of the viewport width
+```css
+.box {
+   width: 50vw; 
+}  
+```
+
