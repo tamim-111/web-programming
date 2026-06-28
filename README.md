@@ -59,7 +59,7 @@
   - [3.8. Box Model:](#38-box-model)
   - [3.9. Border:](#39-border)
   - [3.10. CSS Background:](#310-css-background)
-- [Section A Question:](#section-a-question)
+- [Question:](#question)
   - [1(a) Compare Internet and Extranet based on purpose, accessibility, and security:](#1a-compare-internet-and-extranet-based-on-purpose-accessibility-and-security)
   - [1(b) Differentiate between a Web Server and a Web Client in terms of function and operation:](#1b-differentiate-between-a-web-server-and-a-web-client-in-terms-of-function-and-operation)
   - [1(c) Analyze the sequence of events that occurs when a new URL is entered into a web browser and the web page is displayed:](#1c-analyze-the-sequence-of-events-that-occurs-when-a-new-url-is-entered-into-a-web-browser-and-the-web-page-is-displayed)
@@ -69,6 +69,13 @@
     - [`<form>`:](#form)
   - [2(a) Write HTML code for the following table:](#2a-write-html-code-for-the-following-table)
   - [2(b) Write HTML code for the following list.](#2b-write-html-code-for-the-following-list)
+  - [3(a) Define CSS and explain the types of CSS. Show proper examples:](#3a-define-css-and-explain-the-types-of-css-show-proper-examples)
+  - [3(b) Apply different CSS selectors (element, class, ID) to style various parts of an HTML document:](#3b-apply-different-css-selectors-element-class-id-to-style-various-parts-of-an-html-document)
+  - [3(c) Design a CSS rule that sets the background image of a webpage as paper.png, makes it fixed, and positions it in the bottom-right corner without repeating:](#3c-design-a-css-rule-that-sets-the-background-image-of-a-webpage-as-paperpng-makes-it-fixed-and-positions-it-in-the-bottom-right-corner-without-repeating)
+  - [4(a):](#4a)
+  - [4(b) Explain the use of background-clip property with a gradient image background. Also show another useful usage:](#4b-explain-the-use-of-background-clip-property-with-a-gradient-image-background-also-show-another-useful-usage)
+    - [Example 1: Gradient Text:](#example-1-gradient-text)
+    - [Example 2: background-clip: content-box:](#example-2-background-clip-content-box)
 
 
 # 1. chapter 1:
@@ -766,7 +773,7 @@ https://github.com/muhammad-tamim/css-notes#6-border
 https://github.com/muhammad-tamim/css-notes#9-background-properties
 
 
-# Section A Question:
+# Question:
 ## 1(a) Compare Internet and Extranet based on purpose, accessibility, and security:
 | Feature           | Internet                                          | Extranet                                                                                                              |
 | ----------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -942,4 +949,222 @@ Common Tags that are used to create a form:
             </ol>
         </li>
     </ul>
+```
+
+
+## 3(a) Define CSS and explain the types of CSS. Show proper examples:
+CSS (Cascading Style Sheets) is a stylesheet language used to control the appearance of HTML elements, such as colors, fonts, spacing, layout, and positioning.
+
+There are three types of CSS:
+
+https://github.com/muhammad-tamim/css-notes#13-different-ways-to-add-css
+
+## 3(b) Apply different CSS selectors (element, class, ID) to style various parts of an HTML document: 
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .text {
+            color: green;
+            font-size: 20px;
+        }
+
+        /* ID Selector */
+        #title {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Welcome</h1>
+
+    <p class="text">
+        This paragraph uses a class selector.
+    </p>
+
+    <p>
+        This paragraph is normal.
+    </p>
+</body>
+
+</html>
+```
+
+## 3(c) Design a CSS rule that sets the background image of a webpage as paper.png, makes it fixed, and positions it in the bottom-right corner without repeating: 
+
+```css
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("paper.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background Example</h1>
+</body>
+
+</html>
+```
+
+Explanation
+- background-image → Sets the image.
+- background-repeat: no-repeat → Prevents repeating.
+- background-position: bottom right → Places image at the bottom-right.
+- background-attachment: fixed → Keeps image fixed while scrolling.
+
+## 4(a): 
+![alt text](./assets/images/question/4a-question.png)
+
+```html
+<!-- index.html -->
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="fixed">
+            Fixed Div
+        </div>
+
+        <div class="sticky">
+            Sticky Div
+        </div>
+
+        <div class="relative">
+            Relative Div
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```
+
+```css
+/* style.css */
+
+.parent{
+    height:300px;
+    width:100%;
+    border:2px solid black;
+}
+
+.fixed{
+    position:fixed;
+    top:0;
+    background:red;
+    color:white;
+}
+
+.sticky{
+    position:sticky;
+    top:100px;
+    background:green;
+    color:white;
+}
+
+.relative{
+    position:relative;
+    width:100px;
+    height:200px;
+    overflow:auto;
+    background:lightblue;
+}
+```
+
+## 4(b) Explain the use of background-clip property with a gradient image background. Also show another useful usage:
+The background-clip property specifies how far the background extends within an element. 
+
+Common values:
+- border-box (default): The background extends to the outer edge of the border.
+- padding-box: The background extends to the edge of the padding.
+- content-box: The background extends to the edge of the content.
+- text: The background is clipped to the text content.
+  
+### Example 1: Gradient Text: 
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background: linear-gradient(red, blue);
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gradient Text</h1>
+
+</body>
+
+</html>
+```
+
+### Example 2: background-clip: content-box: 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 10px solid black;
+            padding: 20px;
+            background: orange;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        This is a content-box example.
+    </div>
+</body>
+
+</html>
 ```
