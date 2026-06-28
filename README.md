@@ -46,6 +46,9 @@
     - [3.3.3. position: absolute:](#333-position-absolute)
     - [3.3.4. position: sticky:](#334-position-sticky)
     - [3.3.5. position: fixed:](#335-position-fixed)
+    - [3.3.6. CSS Grid:](#336-css-grid)
+      - [3.3.6.1. Simple Example:](#3361-simple-example)
+    - [3.3.7. CSS Media Queries:](#337-css-media-queries)
 
 
 # 1. chapter 1:
@@ -577,3 +580,44 @@ https://github.com/muhammad-tamim/css-notes#1404-sticky
 
 ### 3.3.5. position: fixed:
 https://github.com/muhammad-tamim/css-notes#1405-fixed
+
+### 3.3.6. CSS Grid: 
+CSS Grid is a two-dimensional layout system used to arrange elements in rows and columns. It makes it easy to create complex and responsive web layouts.
+
+
+common properties of CSS Grid:
+- `display: grid;` → Defines a container as a grid.
+- `grid-template-columns` → Defines the number and size of columns.
+- `gap` → Defines the space between rows and columns.
+
+#### 3.3.6.1. Simple Example:
+- html
+
+```html
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+```
+- css
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+```
+
+![alt text](./assets/images/chapter-3/grid.png)
+
+### 3.3.7. CSS Media Queries:
+https://github.com/muhammad-tamim/css-notes#19-media-queries
