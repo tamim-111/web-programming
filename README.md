@@ -53,6 +53,7 @@
   - [3.4. CSS Viewport:](#34-css-viewport)
     - [3.4.1. Viewport Units:](#341-viewport-units)
     - [3.4.2. Examples:](#342-examples)
+  - [How to add CSS:](#how-to-add-css)
 
 
 # 1. chapter 1:
@@ -314,6 +315,21 @@ Common Tags that are used to create a list:
 
 ![alt text](./assets/images/chapter-2/lists.png)
 
+
+Note: Nested lists can be created by placing one list inside another list item.
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2
+    <ul>
+      <li>Subitem 2.1</li>
+      <li>Subitem 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+```
 
 ## 2.2. Difference Between Block and Inline Elements:
 HTML elements are mainly divided into Block and Inline elements based on how they are displayed on a web page.
@@ -666,3 +682,6 @@ here, the The element takes 50% of the viewport width
 }  
 ```
 
+
+## How to add CSS: 
+https://github.com/muhammad-tamim/css-notes#13-different-ways-to-add-css
