@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .item {
-            background-color: lightblue;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    <title>Nested List</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-    </div>
+
+    <ul>
+        <li>Web Design
+            <ol>
+                <li>HTML
+                    <ol type="a">
+                        <li>Tags</li>
+                        <li>Attributes</li>
+                    </ol>
+                </li>
+
+                <li>CSS
+                    <ol type="a">
+                        <li>Selectors</li>
+                        <li>Colors</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+
+        <li>Programming
+            <ol>
+                <li>JavaScript
+                    <ol type="a">
+                        <li>Variables</li>
+                        <li>Functions</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
 </body>
 
 </html>

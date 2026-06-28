@@ -59,6 +59,16 @@
   - [3.8. Box Model:](#38-box-model)
   - [3.9. Border:](#39-border)
   - [3.10. CSS Background:](#310-css-background)
+- [Section A Question:](#section-a-question)
+  - [1(a) Compare Internet and Extranet based on purpose, accessibility, and security:](#1a-compare-internet-and-extranet-based-on-purpose-accessibility-and-security)
+  - [1(b) Differentiate between a Web Server and a Web Client in terms of function and operation:](#1b-differentiate-between-a-web-server-and-a-web-client-in-terms-of-function-and-operation)
+  - [1(c) Analyze the sequence of events that occurs when a new URL is entered into a web browser and the web page is displayed:](#1c-analyze-the-sequence-of-events-that-occurs-when-a-new-url-is-entered-into-a-web-browser-and-the-web-page-is-displayed)
+  - [1(d) Demonstrate the use of HTML attributes in `<img>`, `<a>`, and `<form>` elements:](#1d-demonstrate-the-use-of-html-attributes-in-img-a-and-form-elements)
+    - [`<img>`:](#img)
+    - [`<a>`:](#a)
+    - [`<form>`:](#form)
+  - [2(a) Write HTML code for the following table:](#2a-write-html-code-for-the-following-table)
+  - [2(b) Write HTML code for the following list.](#2b-write-html-code-for-the-following-list)
 
 
 # 1. chapter 1:
@@ -754,3 +764,182 @@ https://github.com/muhammad-tamim/css-notes#6-border
 
 ## 3.10. CSS Background:
 https://github.com/muhammad-tamim/css-notes#9-background-properties
+
+
+# Section A Question:
+## 1(a) Compare Internet and Extranet based on purpose, accessibility, and security:
+| Feature           | Internet                                          | Extranet                                                                                                              |
+| ----------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Purpose**       | Used for sharing information publicly.            | Used for secure communication between an organization and authorized external users (customers, suppliers, partners). |
+| **Accessibility** | Anyone with an internet connection can access it. | Only authorized users with login credentials can access it.                                                           |
+| **Security**      | Less secure because it is open to everyone.       | More secure because access is restricted and protected by authentication.                                             |
+
+## 1(b) Differentiate between a Web Server and a Web Client in terms of function and operation: 
+| Web Server                              | Web Client                                       |
+| --------------------------------------- | ------------------------------------------------ |
+| Stores website files and data.          | Requests and displays web pages.                 |
+| Receives HTTP requests from clients.    | Sends HTTP requests to servers.                  |
+| Processes requests and sends responses. | Receives responses and shows them to users.      |
+| Example: Apache, Nginx.                 | Example: Google Chrome, Firefox, Microsoft Edge. |
+
+## 1(c) Analyze the sequence of events that occurs when a new URL is entered into a web browser and the web page is displayed:
+
+- The user enters a URL into the browser.
+- The browser checks the DNS to find the website's IP address.
+- The browser connects to the web server using TCP/IP.
+- The browser sends an HTTP/HTTPS request.
+- The web server processes the request.
+- The server sends back HTML, CSS, JavaScript, and other files.
+- The browser downloads these files.
+- The browser renders (displays) the web page to the user.
+
+## 1(d) Demonstrate the use of HTML attributes in `<img>`, `<a>`, and `<form>` elements:
+
+### `<img>`:
+
+`<img src="flower.jpg" alt="Flower" width="300" height="200">`
+
+here, 
+- src → Image location
+- alt → Alternative text
+- width → Image width
+- height → Image height
+
+### `<a>`:
+
+`<a href="https://www.example.com" target="_blank" >Click Here</a>`
+here, 
+- href → Destination URL
+- target="_blank" → Opens the link in a new tab
+
+### `<form>`:
+A form is used to collect user input, such as login information, registration details, or feedback.
+
+Common Tags that are used to create a form:
+- `<form>` → Creates the form.
+- `<input>` → Input field.
+- `<input type="radio">` → Radio button field.
+- `<label>` → Label for the input field.
+- `<textarea>` → Textarea field.
+- `<select>` → Dropdown field.
+- `<button>` → Button field.
+
+```html
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+        <br><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+```
+
+![alt text](./assets/images/chapter-2/form.png)
+
+## 2(a) Write HTML code for the following table: 
+
+![alt text](./assets/images/section-a/table.png)
+
+```css
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+```
+
+```html
+ <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Class</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Anna</td>
+            <td>10</td>
+            <td>A</td>
+            <td>anna@mail.com</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>9</td>
+            <td>B</td>
+            <td>john@mail.com</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>10</td>
+            <td>A</td>
+            <td>sara@mail.com</td>
+        </tr>
+        <tr>
+            <td>Tuhin</td>
+            <td>8</td>
+            <td>A</td>
+            <td>tuhin@mail.com</td>
+        </tr>
+    </table>
+```
+
+## 2(b) Write HTML code for the following list.
+
+```html
+    <ul>
+        <li>Web Design
+            <ol>
+                <li>HTML
+                    <ol type="a">
+                        <li>Tags</li>
+                        <li>Attributes</li>
+                    </ol>
+                </li>
+
+                <li>CSS
+                    <ol type="a">
+                        <li>Selectors</li>
+                        <li>Colors</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+
+        <li>Programming
+            <ol>
+                <li>JavaScript
+                    <ol type="a">
+                        <li>Variables</li>
+                        <li>Functions</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ul>
+```
