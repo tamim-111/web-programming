@@ -40,6 +40,12 @@
     - [3.2.3. display: inline-block:](#323-display-inline-block)
     - [3.2.4. display: none:](#324-display-none)
     - [3.2.5. Summary:](#325-summary)
+  - [3.3. CSS Position Property:](#33-css-position-property)
+    - [3.3.1. position: static:](#331-position-static)
+    - [3.3.2. position: relative:](#332-position-relative)
+    - [3.3.3. position: absolute:](#333-position-absolute)
+    - [3.3.4. position: sticky:](#334-position-sticky)
+    - [3.3.5. position: fixed:](#335-position-fixed)
 
 
 # 1. chapter 1:
@@ -547,3 +553,27 @@ p {
 | inline        | ❌ No      | ❌ No              | ❌ Usually No         |
 | inline-block  | ❌ No      | ❌ No              | ✅ Yes                |
 | none          | ❌ Hidden  | ❌ No              | ❌ Not displayed      |
+
+## 3.3. CSS Position Property:
+The position property determines how an HTML element is positioned on a web page. There are 5 values on the position property:
+- Static → Default position.
+- Relative → Move from its original position.
+- Absolute → Position relative to the nearest positioned parent.
+- Fixed → Fixed to the browser window.
+- Sticky → Acts like relative, then sticks while scrolling.
+
+
+### 3.3.1. position: static:
+https://github.com/muhammad-tamim/css-notes#1401-staticdefault
+
+### 3.3.2. position: relative:
+https://github.com/muhammad-tamim/css-notes#1402-relative
+
+### 3.3.3. position: absolute:
+https://github.com/muhammad-tamim/css-notes#1403-absolute
+
+### 3.3.4. position: sticky:
+https://github.com/muhammad-tamim/css-notes#1404-sticky
+
+### 3.3.5. position: fixed:
+https://github.com/muhammad-tamim/css-notes#1405-fixed
