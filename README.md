@@ -47,15 +47,18 @@
     - [3.3.3. position: absolute:](#333-position-absolute)
     - [3.3.4. position: sticky:](#334-position-sticky)
     - [3.3.5. position: fixed:](#335-position-fixed)
-    - [3.3.6. CSS Grid:](#336-css-grid)
-      - [3.3.6.1. Simple Example:](#3361-simple-example)
-    - [3.3.7. CSS Media Queries:](#337-css-media-queries)
-  - [3.4. CSS Viewport:](#34-css-viewport)
-    - [3.4.1. Viewport Units:](#341-viewport-units)
-    - [3.4.2. Examples:](#342-examples)
-  - [3.5. How to add CSS:](#35-how-to-add-css)
-  - [3.6. Box Model:](#36-box-model)
-  - [3.7. Border:](#37-border)
+  - [3.4. CSS Grid and Flexbox:](#34-css-grid-and-flexbox)
+    - [3.4.1. CSS Flexbox:](#341-css-flexbox)
+    - [3.4.2. CSS Grid:](#342-css-grid)
+    - [3.4.3. Grid vs Flexbox:](#343-grid-vs-flexbox)
+  - [3.5. CSS Media Queries:](#35-css-media-queries)
+  - [3.6. CSS Viewport:](#36-css-viewport)
+    - [3.6.1. Viewport Units:](#361-viewport-units)
+    - [3.6.2. Examples:](#362-examples)
+  - [3.7. How to add CSS:](#37-how-to-add-css)
+  - [3.8. Box Model:](#38-box-model)
+  - [3.9. Border:](#39-border)
+  - [3.10. CSS Background:](#310-css-background)
 
 
 # 1. chapter 1:
@@ -606,17 +609,59 @@ https://github.com/muhammad-tamim/css-notes#1404-sticky
 ### 3.3.5. position: fixed:
 https://github.com/muhammad-tamim/css-notes#1405-fixed
 
-### 3.3.6. CSS Grid: 
-CSS Grid is a two-dimensional layout system used to arrange elements in rows and columns. It makes it easy to create complex and responsive web layouts.
+## 3.4. CSS Grid and Flexbox: 
+CSS Grid and Flexbox are CSS layout systems used to arrange and align elements on a web page.
+- Flexbox is designed for one-dimensional layouts (either a row or a column).
+- CSS Grid is designed for two-dimensional layouts (rows and columns).
 
+### 3.4.1. CSS Flexbox: 
+Common Flexbox Properties: 
 
-common properties of CSS Grid:
-- `display: grid;` → Defines a container as a grid.
-- `grid-template-columns` → Defines the number and size of columns.
-- `gap` → Defines the space between rows and columns.
+| Property        | Purpose                   |
+| --------------- | ------------------------- |
+| display: flex   | Creates a flex container  |
+| flex-direction  | Sets row or column layout |
+| justify-content | Aligns items horizontally |
+| align-items     | Aligns items vertically   |
+| gap             | Adds space between items  |
 
-#### 3.3.6.1. Simple Example:
-- html
+```html
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+```
+
+```css
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+```
+
+![alt text](./assets/images/chapter-3/flex.png)
+
+### 3.4.2. CSS Grid: 
+Common Grid Properties: 
+
+| Property              | Purpose                       |
+| --------------------- | ----------------------------- |
+| display: grid         | Creates a grid container      |
+| grid-template-columns | Defines the columns           |
+| gap                   | Adds space between grid items |
+| justify-items         | Aligns items horizontally     |
+| align-items           | Aligns items vertically       |
+
 
 ```html
 <div class="container">
@@ -626,12 +671,13 @@ common properties of CSS Grid:
     <div class="item">4</div>
 </div>
 ```
-- css
 
 ```css
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -641,13 +687,25 @@ common properties of CSS Grid:
     text-align: center;
 }
 ```
-
+  
 ![alt text](./assets/images/chapter-3/grid.png)
 
-### 3.3.7. CSS Media Queries:
+
+
+### 3.4.3. Grid vs Flexbox: 
+
+| Flexbox                                  | Grid                                         |
+| ---------------------------------------- | -------------------------------------------- |
+| One-dimensional layout                   | Two-dimensional layout                       |
+| Arranges items in a row or column        | Arranges items in rows and columns           |
+| Best for menus, navigation bars, buttons | Best for page layouts, dashboards, galleries |
+| Easier for small layouts                 | Better for complex layouts                   |
+
+
+## 3.5. CSS Media Queries:
 https://github.com/muhammad-tamim/css-notes#19-media-queries
 
-## 3.4. CSS Viewport:  
+## 3.6. CSS Viewport:  
 The viewport is the visible area of a web page in the browser. The viewport size changes depending on the device: 
 - Desktop → Large viewport
 - Tablet → Medium viewport
@@ -655,7 +713,7 @@ The viewport is the visible area of a web page in the browser. The viewport size
 
 Note: Responsive websites use the viewport to adjust their layout for different screen sizes.
 
-### 3.4.1. Viewport Units: 
+### 3.6.1. Viewport Units: 
 
 | Unit | Meaning                              |
 | ---- | ------------------------------------ |
@@ -664,7 +722,7 @@ Note: Responsive websites use the viewport to adjust their layout for different 
 | vmin | 1% of the smaller viewport dimension |
 | vmax | 1% of the larger viewport dimension  |
 
-### 3.4.2. Examples:
+### 3.6.2. Examples:
 
 1. Full Screen Height:
 
@@ -685,11 +743,14 @@ here, the The element takes 50% of the viewport width
 ```
 
 
-## 3.5. How to add CSS: 
+## 3.7. How to add CSS: 
 https://github.com/muhammad-tamim/css-notes#13-different-ways-to-add-css
 
-## 3.6. Box Model: 
+## 3.8. Box Model: 
 https://github.com/muhammad-tamim/css-notes#8-box-modal
 
-## 3.7. Border: 
+## 3.9. Border: 
 https://github.com/muhammad-tamim/css-notes#6-border
+
+## 3.10. CSS Background:
+https://github.com/muhammad-tamim/css-notes#9-background-properties
