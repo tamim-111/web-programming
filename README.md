@@ -53,7 +53,9 @@
   - [3.4. CSS Viewport:](#34-css-viewport)
     - [3.4.1. Viewport Units:](#341-viewport-units)
     - [3.4.2. Examples:](#342-examples)
-  - [How to add CSS:](#how-to-add-css)
+  - [3.5. How to add CSS:](#35-how-to-add-css)
+  - [3.6. Box Model:](#36-box-model)
+  - [3.7. Border:](#37-border)
 
 
 # 1. chapter 1:
@@ -683,5 +685,11 @@ here, the The element takes 50% of the viewport width
 ```
 
 
-## How to add CSS: 
+## 3.5. How to add CSS: 
 https://github.com/muhammad-tamim/css-notes#13-different-ways-to-add-css
+
+## 3.6. Box Model: 
+https://github.com/muhammad-tamim/css-notes#8-box-modal
+
+## 3.7. Border: 
+https://github.com/muhammad-tamim/css-notes#6-border
